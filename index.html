@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Studio | Codex Sample</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true">
+      <span class="glow glow-a"></span>
+      <span class="glow glow-b"></span>
+      <span class="glow glow-c"></span>
+      <div class="grid"></div>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="#">
+        <span class="brand-mark">N</span>
+        <span>Nova Studio</span>
+      </a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#work">Showcase</a>
+        <a href="#features">Features</a>
+        <a href="#launch">Launch</a>
+      </nav>
+      <button class="ghost-button" type="button">Join beta</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Codex로 만든 첫 번째 웹 샘플</p>
+          <h1>상상한 화면을 바로 브라우저에 펼쳐보는 디자인 스튜디오</h1>
+          <p class="hero-text">
+            프론트엔드부터 서버, 데이터베이스까지 단계적으로 확장할 수 있는
+            화려한 샘플 페이지입니다. 지금은 정적 UI이고, 다음 단계에서 동적
+            기능을 붙입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#work">샘플 보기</a>
+            <a class="secondary-button" href="#features">구성 살펴보기</a>
+          </div>
+          <div class="metrics" aria-label="프로젝트 지표">
+            <div>
+              <strong data-count="24">0</strong>
+              <span>화면 컴포넌트</span>
+            </div>
+            <div>
+              <strong data-count="98">0</strong>
+              <span>반응형 점수</span>
+            </div>
+            <div>
+              <strong data-count="3">0</strong>
+              <span>다음 확장 단계</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="제품 미리보기">
+          <div class="panel-toolbar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>Live Preview</p>
+          </div>
+          <div class="orbit">
+            <div class="core">AI</div>
+            <span style="--i: 0">UI</span>
+            <span style="--i: 1">API</span>
+            <span style="--i: 2">DB</span>
+            <span style="--i: 3">Deploy</span>
+          </div>
+          <div class="activity-card">
+            <div>
+              <small>오늘의 작업</small>
+              <strong>Landing page polish</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="showcase">
+        <div class="section-heading">
+          <p class="eyebrow">Showcase</p>
+          <h2>눈에 바로 들어오는 샘플 콘텐츠</h2>
+        </div>
+        <div class="card-grid">
+          <article class="feature-card spotlight">
+            <p>01</p>
+            <h3>Interactive hero</h3>
+            <span>강한 첫인상, 버튼, 지표 애니메이션을 포함합니다.</span>
+          </article>
+          <article class="feature-card">
+            <p>02</p>
+            <h3>Responsive layout</h3>
+            <span>모바일과 데스크톱에서 자연스럽게 재배치됩니다.</span>
+          </article>
+          <article class="feature-card">
+            <p>03</p>
+            <h3>Server ready</h3>
+            <span>다음 단계에서 API와 DB를 붙이기 좋은 구조입니다.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="timeline">
+        <div class="section-heading">
+          <p class="eyebrow">Roadmap</p>
+          <h2>앞으로 이렇게 확장합니다</h2>
+        </div>
+        <ol>
+          <li>
+            <strong>Step 1. 화려한 정적 페이지</strong>
+            <span>지금 만든 화면입니다. HTML, CSS, JS의 역할을 익힙니다.</span>
+          </li>
+          <li>
+            <strong>Step 2. 동적 서버 API</strong>
+            <span>문의 폼, 좋아요, 대시보드 데이터를 서버에서 받아옵니다.</span>
+          </li>
+          <li>
+            <strong>Step 3. DB와 로그인</strong>
+            <span>Supabase 같은 DB에 사용자와 콘텐츠를 저장합니다.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="launch" class="cta">
+        <p class="eyebrow">Launch</p>
+        <h2>다음 버튼 하나로 백엔드까지 갑니다</h2>
+        <p>
+          다음 작업에서는 이 페이지에 실제 API를 만들고, 버튼 클릭이나 폼 입력이
+          서버와 통신하도록 바꿉니다.
+        </p>
+        <button class="primary-button" id="sparkButton" type="button">효과 실행</button>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
